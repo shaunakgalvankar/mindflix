@@ -1,1 +1,1 @@
-# mindflix
+# Mindflix
