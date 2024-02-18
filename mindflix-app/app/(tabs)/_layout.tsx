@@ -50,10 +50,11 @@ export default function TabLayout() {
           ),
         }}
       />
+      
       <Tabs.Screen
         name="two"
         options={{
-          title: 'Sharing',
+          title: 'Summary',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="people" size={24} color="#b6fc32" />
           ),
@@ -62,6 +63,19 @@ export default function TabLayout() {
           },
         }}
       />
+
+    <Tabs.Screen
+      name="three"
+      options={{
+        title: 'Sharing',
+        tabBarIcon: ({ color, size }) => (
+          <Ionicons name="people" size={24} color="#b6fc32" />
+        ),
+        tabBarLabelStyle: {
+          color: "#b6fc32", // Set this to the same color as your icon
+        },
+      }}
+    />
     </Tabs>
   );
 }

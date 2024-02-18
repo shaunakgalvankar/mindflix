@@ -1,10 +1,15 @@
 import { StyleSheet } from 'react-native';
+
 import { Text, View } from '../../components/Themed';
+import StatusContainer from '../../components/StatusContainer'; // Adjust the path as needed
 import { AntDesign } from '@expo/vector-icons';
 
-export default function TabTwoScreen() {
+export default function TabThreeScreen() {
   return (
     <View style={styles.container}>
+      <AntDesign name="pluscircle" size={24} color="#b6fc32"  style={styles.icon}/>
+      <StatusContainer items={{ title: ["Shaunak"], achieved: [], goals: [] }} />
+      <Text style={styles.title}>Friends</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
     </View>
   );
@@ -13,6 +18,7 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#121212',
   },
