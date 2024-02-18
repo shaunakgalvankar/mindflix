@@ -10,8 +10,6 @@ export default function TabTwoScreen() {
     <View style={styles.container}>
       <AntDesign name="pluscircle" size={24} color="#b6fc32"  style={styles.icon}/>
       <StatusContainer items={{ title: ["Shaunak"], achieved: [], goals: [] }} />
-      <Text style={styles.title}>Tab Two</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       {/* <EditScreenInfo path="app/(tabs)/two.tsx" /> */}
     </View>
   );
