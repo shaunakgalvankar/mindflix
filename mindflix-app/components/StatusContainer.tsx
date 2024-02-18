@@ -8,17 +8,17 @@ import RingsComponent from './rings';
 const StatusContainer = ({ items }: { items: { title: string[], achieved: number[], goals: number[] } }) => {
     return (
         <View style={styles.container}>
-            <View>
-            {items && (
-                <View style={styles.item}>
-                    
-                    {items.achieved.map((cur, idx) => <View key={idx}>
-                        <Text style={styles.title}>{items.title}</Text>
-                        <Text style={styles.data}>{cur} / {items.goals[idx]}</Text>
-                        </View>)}
-
-                </View>
-            )}
+            <View style={{ backgroundColor: 'black' }}>
+                {items && (
+                    <View style={styles.item}>
+                        {items.achieved.map((cur, idx) => (
+                            <View key={idx}>
+                                <Text style={styles.title}>{items.title}</Text>
+                                <Text style={styles.data}>{cur} / {items.goals[idx]}</Text>
+                            </View>
+                        ))}
+                    </View>
+                )}
             </View>
             <RingsComponent fillValue={items.achieved.map((cur, idx) => (cur / items.goals[idx]) * 100)} />
         </View>
@@ -37,15 +37,18 @@ const styles = StyleSheet.create({
         margin:1,
         marginBottom: 10,
         padding: 10,
-        borderRadius: 5,
-        backgroundColor : 'black'
+        backgroundColor: 'black'
     },
     title: {
         fontSize: 18,
         fontWeight: 'bold',
+        color: 'white',
+        backgroundColor: 'black'
     },
     data: {
         fontSize: 16,
+        color: 'white',
+        backgroundColor: 'black'
     },
 });
 
