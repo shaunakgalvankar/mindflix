@@ -31,13 +31,15 @@ const titleColor = ['#F28123', '#f42e6e', '#b6fc32', '#1fc2df'];
 
 const styles = StyleSheet.create({
     container: {
-        width: Dimensions.get('window').width, 
-        borderRadius: 40,// This will make the container occupy the whole width
-        backgroundColor: '#121212', // Replace 'white' with your light theme color
-        flexDirection: 'row', // This will arrange the children of the container side by side
-        justifyContent: 'space-between', // This will put some space between the children
-        margin: 8,
-        marginBottom: 5
+        marginTop: -2, 
+        backgroundColor: '#121212',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 20,
+        borderRadius: 20,
+        margin: 10,
+        width: width - 30,
     },
     item: {
         margin: 1,

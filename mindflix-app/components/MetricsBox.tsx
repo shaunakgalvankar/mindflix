@@ -28,6 +28,7 @@ const MetricsBox = () => {
 };
 
 const styles = StyleSheet.create({
+  
   container: {
     marginTop: -5, 
     backgroundColor: '#121212',

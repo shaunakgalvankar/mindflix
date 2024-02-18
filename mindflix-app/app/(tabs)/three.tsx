@@ -6,6 +6,8 @@ import StatusContainerMini from '../../components/StatusContainerMini';
 import { ScrollView } from 'react-native';
 import { FlatList } from 'react-native';
 
+const { width } = Dimensions.get('window');
+
 const miniItems1 = { name: "Calvin Dani", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [71, 63, 72, 21], goals: [100, 100, 100, 100] };
 const miniItems2 = { name: "Shaunak Galvankar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [74, 61, 79, 37], goals: [100, 100, 100, 100] };
 const miniItems3 = { name: "Rani Rajurkar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [22, 69, 79, 89], goals: [100, 100, 100, 100] };
@@ -18,14 +20,10 @@ const miniItems8 = { name: "Mantahan Shah", title: ['Screen Time', 'Move', 'Exce
 
 export default function TabThreeScreen() {
   return (
-    <View style={styles.container2}>
-
+    <View style={styles.container}>
       <View style={styles.summary}>
-        <Text style={styles.summarytitle}>Sharing</Text>
-        {/* <AntDesign name="pluscircle" size={24} color="#b6fc32" style={styles.icon} /> */}
-
+        <Text style={styles.summarytitle}>Friends</Text>
       </View>
-      <View style={{ paddingTop: 10, paddingLeft:1, backgroundColor: "black" }}>
       <ScrollView contentContainerStyle={styles.container}>
         <StatusContainerMini items={miniItems1} />
         <StatusContainerMini items={miniItems2} />
@@ -41,43 +39,34 @@ export default function TabThreeScreen() {
         <StatusContainerMini items={miniItems8} />
         
       </ScrollView>
-      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   summary: {
-    // justifyContent: 'space-between',
-    // alignItems: 'center',
-    // alignItems:'flex-end',
-    backgroundColor: '#121212',
-    padding: 40, // Adjust the padding as needed
-    // marginTop: 20,
-    
+    paddingTop: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: 'black',
+    paddingBottom:10
+    // padding: 10, // Adjust the padding as needed
   },
   summarytitle: {
-    // marginTop: 40,
-    // marginLeft: -192,
+    // marginTop: 20,
+    marginLeft: 20,
+    // alignItems: 'center',
     color: 'white',
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
   },
-  container2: {
-    width: Dimensions.get('window').width,
-    flex: 1,
-    alignItems: 'flex-start',
-    // justifyContent: 'center',
-    backgroundColor: '#121212',
-    margin: 5
-  },
   container: {
+    width: width - 20,
     // flex: 1,
     // alignItems: 'center',
     // justifyContent: 'center',
-    // backgroundColor: '#121212',
-    borderRadius: 10
-    
+    backgroundColor: 'black',
   },
   title: {
     fontSize: 20,
