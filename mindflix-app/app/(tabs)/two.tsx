@@ -9,6 +9,9 @@ export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
       <StatusContainer items={{ title: ["Shaunak"], achieved: [], goals: [] }} />
+      <Text style={styles.title}>Tab Two</Text>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      {/* <EditScreenInfo path="app/(tabs)/two.tsx" /> */}
     </View>
   );
 }
@@ -18,14 +21,17 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#121212',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+    color: '#ffffff',
   },
   separator: {
     marginVertical: 30,
     height: 1,
     width: '80%',
+    backgroundColor: "rgba(255,255,255,0.1)",
   },
 });
