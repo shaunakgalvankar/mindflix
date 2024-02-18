@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 import { Text, View } from '../../components/Themed';
 import { AntDesign } from '@expo/vector-icons';
 import StatusContainerMini from '../../components/StatusContainerMini';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native';
+import { FlatList } from 'react-native';
 
 const miniItems1 = { name: "Sachin Tendulkar", title: ['Screen Time','Move','Excercise','Stand'], achieved: [70,65,75,80], goals: [100, 100, 100, 100] };
 const miniItems2 = { name: "Virat Kohli", title: ['Screen Time','Move','Excercise','Stand'], achieved: [74,61,75,70], goals: [100, 100, 100, 100] };
@@ -17,8 +18,8 @@ const miniItems8 = { name: "Shikhar Dhawan", title: ['Screen Time','Move','Excer
 
 export default function TabThreeScreen() {
   return (
-      <ScrollView>
-        <View style={styles.container}>
+<ScrollView contentContainerStyle={styles.container}>
+
           <AntDesign name="pluscircle" size={24} color="#b6fc32"  style={styles.icon}/>
           <StatusContainerMini items={miniItems1} />
           <StatusContainerMini items={miniItems2} />
@@ -32,9 +33,69 @@ export default function TabThreeScreen() {
           <StatusContainerMini items={miniItems6} />
           <StatusContainerMini items={miniItems7} />
           <StatusContainerMini items={miniItems8} />
-          <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-        </View>
-      </ScrollView>
+          <StatusContainerMini items={miniItems1} />
+          <StatusContainerMini items={miniItems2} />
+          <StatusContainerMini items={miniItems3} />
+          <StatusContainerMini items={miniItems4} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems1} />
+          <StatusContainerMini items={miniItems2} />
+          <StatusContainerMini items={miniItems3} />
+          <StatusContainerMini items={miniItems4} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems1} />
+          <StatusContainerMini items={miniItems2} />
+          <StatusContainerMini items={miniItems3} />
+          <StatusContainerMini items={miniItems4} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems1} />
+          <StatusContainerMini items={miniItems2} />
+          <StatusContainerMini items={miniItems3} />
+          <StatusContainerMini items={miniItems4} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems1} />
+          <StatusContainerMini items={miniItems2} />
+          <StatusContainerMini items={miniItems3} />
+          <StatusContainerMini items={miniItems4} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+          <StatusContainerMini items={miniItems5} />
+          <StatusContainerMini items={miniItems6} />
+          <StatusContainerMini items={miniItems7} />
+          <StatusContainerMini items={miniItems8} />
+
+
+        </ScrollView>
   );
 }
 
