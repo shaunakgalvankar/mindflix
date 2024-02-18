@@ -1,11 +1,11 @@
-import { StyleSheet, useColorScheme } from 'react-native';
+import { StyleSheet, useColorScheme, Dimensions } from 'react-native';
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
 import RingsComponent from '../../components/rings';
 import StatusContainer from '../../components/StatusContainer';
 
 
-const items =  { title: ['Move'], achieved: [10], goals :[100]};
+const items = { title: ['Move'], achieved: [10, 50, 70, 100], goals: [100, 100, 100, 100] };
 
 
 
@@ -26,6 +26,7 @@ export default function TabOneScreen() {
 
 const styles = StyleSheet.create({
   container: {
+    width: Dimensions.get('window').width,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
