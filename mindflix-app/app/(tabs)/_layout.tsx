@@ -4,6 +4,7 @@ import { Pressable, useColorScheme } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '../../constants/Colors';
 import { AntDesign } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 /**
@@ -29,7 +30,7 @@ export default function TabLayout() {
         options={{
           title: 'Summary',
           tabBarIcon: ({ color, size }) => (
-            <AntDesign name="apple1" size={24} color="#b6fc32" />
+<MaterialCommunityIcons name="radar" size={24} color="#b6fc32" />
           ),
           tabBarLabelStyle: {
             color: "#b6fc32", // Set this to the same color as your icon
@@ -54,7 +55,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="two"
         options={{
-          title: 'Summary',
+          title: 'Screen Time',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="people" size={24} color="#b6fc32" />
           ),
