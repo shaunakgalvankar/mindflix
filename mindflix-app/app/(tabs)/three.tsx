@@ -6,14 +6,14 @@ import StatusContainerMini from '../../components/StatusContainerMini';
 import { ScrollView } from 'react-native';
 import { FlatList } from 'react-native';
 
-const miniItems1 = { name: "Calvin Dani", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [70, 65, 75, 80], goals: [100, 100, 100, 100] };
-const miniItems2 = { name: "Shaunak Galvankar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [74, 61, 75, 70], goals: [100, 100, 100, 100] };
-const miniItems3 = { name: "Rani Rajurkar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [20, 65, 75, 60], goals: [100, 100, 100, 100] };
-const miniItems4 = { name: "Jash Shah", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [10, 65, 75, 50], goals: [100, 100, 100, 100] };
-const miniItems5 = { name: "Juilee Katpatal", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [30, 65, 75, 80], goals: [100, 100, 100, 100] };
-const miniItems6 = { name: "Piyush Mamidwar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [80, 65, 75, 40], goals: [100, 100, 100, 100] };
-const miniItems7 = { name: "Vedica Rao", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [60, 65, 75, 30], goals: [100, 100, 100, 100] };
-const miniItems8 = { name: "Mantahan Shah", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [90, 65, 75, 76], goals: [100, 100, 100, 100] };
+const miniItems1 = { name: "Calvin Dani", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [71, 63, 72, 83], goals: [100, 100, 100, 100] };
+const miniItems2 = { name: "Shaunak Galvankar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [74, 61, 79, 73], goals: [100, 100, 100, 100] };
+const miniItems3 = { name: "Rani Rajurkar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [22, 69, 79, 69], goals: [100, 100, 100, 100] };
+const miniItems4 = { name: "Jash Shah", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [11, 61, 76, 53], goals: [100, 100, 100, 100] };
+const miniItems5 = { name: "Juilee Katpatal", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [29, 65, 75, 89], goals: [100, 100, 100, 100] };
+const miniItems6 = { name: "Piyush Mamidwar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [23, 65, 75, 47], goals: [100, 100, 100, 100] };
+const miniItems7 = { name: "Vedica Rao", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [64, 657, 78, 31], goals: [100, 100, 100, 100] };
+const miniItems8 = { name: "Mantahan Shah", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [92, 68, 73, 76], goals: [100, 100, 100, 100] };
 
 
 export default function TabThreeScreen() {
