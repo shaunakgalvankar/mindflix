@@ -6,14 +6,14 @@ import StatusContainerMini from '../../components/StatusContainerMini';
 import { ScrollView } from 'react-native';
 import { FlatList } from 'react-native';
 
-const miniItems1 = { name: "Sachin Tendulkar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [70, 65, 75, 80], goals: [100, 100, 100, 100] };
-const miniItems2 = { name: "Virat Kohli", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [74, 61, 75, 70], goals: [100, 100, 100, 100] };
-const miniItems3 = { name: "Rohit Sharma", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [20, 65, 75, 60], goals: [100, 100, 100, 100] };
-const miniItems4 = { name: "MS Dhoni", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [10, 65, 75, 50], goals: [100, 100, 100, 100] };
-const miniItems5 = { name: "Jasprit Bumrah", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [30, 65, 75, 80], goals: [100, 100, 100, 100] };
-const miniItems6 = { name: "Hardik Pandya", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [80, 65, 75, 40], goals: [100, 100, 100, 100] };
-const miniItems7 = { name: "Ravindra Jadeja", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [60, 65, 75, 30], goals: [100, 100, 100, 100] };
-const miniItems8 = { name: "Shikhar Dhawan", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [90, 65, 75, 76], goals: [100, 100, 100, 100] };
+const miniItems1 = { name: "Calvin Dani", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [70, 65, 75, 80], goals: [100, 100, 100, 100] };
+const miniItems2 = { name: "Shaunak Galvankar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [74, 61, 75, 70], goals: [100, 100, 100, 100] };
+const miniItems3 = { name: "Rani Rajurkar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [20, 65, 75, 60], goals: [100, 100, 100, 100] };
+const miniItems4 = { name: "Jash Shah", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [10, 65, 75, 50], goals: [100, 100, 100, 100] };
+const miniItems5 = { name: "Juilee Katpatal", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [30, 65, 75, 80], goals: [100, 100, 100, 100] };
+const miniItems6 = { name: "Piyush Mamidwar", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [80, 65, 75, 40], goals: [100, 100, 100, 100] };
+const miniItems7 = { name: "Vedica Rao", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [60, 65, 75, 30], goals: [100, 100, 100, 100] };
+const miniItems8 = { name: "Mantahan Shah", title: ['Screen Time', 'Move', 'Excercise', 'Stand'], achieved: [90, 65, 75, 76], goals: [100, 100, 100, 100] };
 
 
 export default function TabThreeScreen() {
@@ -39,66 +39,7 @@ export default function TabThreeScreen() {
         <StatusContainerMini items={miniItems6} />
         <StatusContainerMini items={miniItems7} />
         <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems1} />
-        <StatusContainerMini items={miniItems2} />
-        <StatusContainerMini items={miniItems3} />
-        <StatusContainerMini items={miniItems4} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems1} />
-        <StatusContainerMini items={miniItems2} />
-        <StatusContainerMini items={miniItems3} />
-        <StatusContainerMini items={miniItems4} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems1} />
-        <StatusContainerMini items={miniItems2} />
-        <StatusContainerMini items={miniItems3} />
-        <StatusContainerMini items={miniItems4} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems1} />
-        <StatusContainerMini items={miniItems2} />
-        <StatusContainerMini items={miniItems3} />
-        <StatusContainerMini items={miniItems4} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems1} />
-        <StatusContainerMini items={miniItems2} />
-        <StatusContainerMini items={miniItems3} />
-        <StatusContainerMini items={miniItems4} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
-        <StatusContainerMini items={miniItems5} />
-        <StatusContainerMini items={miniItems6} />
-        <StatusContainerMini items={miniItems7} />
-        <StatusContainerMini items={miniItems8} />
+        
       </ScrollView>
       </View>
     </View>
