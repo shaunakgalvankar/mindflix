@@ -15,7 +15,7 @@ const StatusContainerMini = ({ items }: { items: { name: string, title: string[]
                             <Text style={styles.data}>{(items.achieved[3] / items.goals[3]) * 100}</Text>
                         </View>
                         <View >
-                            <Text style={styles.data}>{(items.achieved[3] / items.goals[3])}</Text>
+                            <Text style={styles.data}>{items.achieved[3] } / {items.goals[3]}</Text>
                         </View>
                     </View>
                 )}
@@ -25,7 +25,7 @@ const StatusContainerMini = ({ items }: { items: { name: string, title: string[]
     );
 };
 
-const titleColor = ['#e8d7ff', '#f42e6e', '#b6fc32', '#1fc2df'];
+const titleColor = ['#F28123', '#f42e6e', '#b6fc32', '#1fc2df'];
 
 const styles = StyleSheet.create({
     container: {
@@ -44,12 +44,12 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: 'white',
+        color: '#B6FC32',
         backgroundColor: 'black'
     },
     data: {
         fontSize: 16,
-        color: 'white',
+        color: '#F28123',
         backgroundColor: 'black'
     },
 });

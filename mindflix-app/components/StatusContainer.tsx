@@ -14,8 +14,8 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
                     <View style={styles.item}>
                         {items.achieved.map((cur, idx) => (
                             <View key={idx}>
-                                <Text style={[styles.title, { color : titleColor[idx]}]}>{items.title[idx]}</Text>
-                                <Text style={styles.data}>{cur} / {items.goals[idx]}</Text>
+                                <Text style={[styles.title]}>{items.title[idx]}</Text>
+                                <Text style={[styles.data,{ color : titleColor[idx]}]}>{cur} / {items.goals[idx]} {title[idx]}</Text>
                             </View>
                         ))}
                     </View>
@@ -28,7 +28,8 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
     );
 };
 
-const titleColor = ['#e8d7ff','#f42e6e', '#b6fc32','#1fc2df' ];
+const titleColor = ['#F28123','#f42e6e', '#b6fc32','#1fc2df' ];
+const title = ['HRS/DAY','CAL/DAY','MIN', 'HRS' ];
 
 const styles = StyleSheet.create({
     container: {
