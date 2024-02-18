@@ -6,7 +6,7 @@ import RingsComponentMini from './ringsMini';
 
 const { width } = Dimensions.get('window');
 
-const StatusContainerMini = ({ items }: { items: { name: string, title: string[], achieved: number[], goals: number[] } }) => {
+const StatusContainerMini = ({ items }: { items: { name: string, title: string[], achieved: number[], goals: number[], percentage: number[] } }) => {
     return (
         <View style={styles.container}>
              <View style={{flex: 0.5, backgroundColor: '#121212' }}>
@@ -14,7 +14,7 @@ const StatusContainerMini = ({ items }: { items: { name: string, title: string[]
                 {items && (
                     <View style={styles.item}>
                         <View >
-                            <Text style={styles.data}>{(items.achieved[3] / items.goals[3]) * 100} %</Text>
+                            <Text style={styles.data}>{items.percentage[3]} %</Text>
                         </View>
                         <View >
                             <Text style={[styles.data,{color:'#f42e6e'}]}>{items.achieved[3] } / {items.goals[3]}</Text>
