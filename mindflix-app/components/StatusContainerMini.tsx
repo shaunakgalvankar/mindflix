@@ -14,7 +14,7 @@ const StatusContainerMini = ({ items }: { items: { name: string, title: string[]
                 {items && (
                     <View style={styles.item}>
                         <View >
-                            <Text style={styles.data}>{items.percentage[3]} %</Text>
+                            <Text style={styles.data}>{items.percentage[2]} %</Text>
                         </View>
                         <View >
                             <Text style={[styles.data,{color:'#f42e6e'}]}>{items.achieved[3] } / {items.goals[3]}</Text>
