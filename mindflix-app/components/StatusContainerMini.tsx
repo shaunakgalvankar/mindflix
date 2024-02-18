@@ -7,7 +7,7 @@ import RingsComponentMini from './ringsMini';
 const StatusContainerMini = ({ items }: { items: { name: string, title: string[], achieved: number[], goals: number[] } }) => {
     return (
         <View style={styles.container}>
-            <View style={{ backgroundColor: 'black' }}>
+             <View style={{flex: 0.5, backgroundColor: 'black' }}>
                 <Text style={styles.title}>{items.name}</Text>
                 {items && (
                     <View style={styles.item}>

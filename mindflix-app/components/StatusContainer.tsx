@@ -7,7 +7,7 @@ import RingsComponent from './rings';
 const StatusContainer = ({ items }: { items: { title: string[], achieved: number[], goals: number[] } }) => {
     return (
         <View style={styles.container}>
-            <View style={{ backgroundColor: 'black' }}>
+            <View style={{flex: 0.5, backgroundColor: 'black' }}>
                 {items && (
                     <View style={styles.item}>
                         {items.achieved.map((cur, idx) => (
@@ -19,7 +19,9 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
                     </View>
                 )}
             </View>
-            <RingsComponent fillValue={items.achieved.map((cur, idx) => (cur / items.goals[idx]) * 100)} />
+            <View style={{flex: 0.5, backgroundColor: 'black' }}>
+                <RingsComponent fillValue={items.achieved.map((cur, idx) => (cur / items.goals[idx]) * 100)} />
+            </View>
         </View>
     );
 };
@@ -33,7 +35,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#121212', // Replace 'white' with your light theme color
         flexDirection: 'row', // This will arrange the children of the container side by side
         justifyContent: 'space-between', // This will put some space between the children
-      },
+    },
     item: {
         padding: 10,
         backgroundColor: '#121212'
