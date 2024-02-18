@@ -5,7 +5,7 @@ import TrendContainer from '../../components/TrendContainer';
 import MetricsBox from '../../components/MetricsBox';
 import { Image } from 'react-native';
 
-const items = { title: ['Screen Time','Move','Excercise','Stand'], achieved: [40, 50, 70, 60], goals: [100, 100, 100, 100] };
+const items = { title: ['Screen Time','Move','Excercise','Stand'], achieved: [3, 50, 70, 60], goals: [5, 100, 100, 100] };
 const miniItems = { name: "Calvin Dani", title: ['Screen Time','Move','Excercise','Stand'], achieved: [10, 389, 7, 9], goals: [100, 1000, 60, 12] };
 
 
