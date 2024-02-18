@@ -17,7 +17,7 @@ const StatusContainerMini = ({ items }: { items: { name: string, title: string[]
                             <Text style={styles.data}>{(items.achieved[3] / items.goals[3]) * 100} %</Text>
                         </View>
                         <View >
-                            <Text style={styles.data}>{items.achieved[3] } / {items.goals[3]}</Text>
+                            <Text style={[styles.data,{color:'#f42e6e'}]}>{items.achieved[3] } / {items.goals[3]}</Text>
                         </View>
                     </View>
                 )}
