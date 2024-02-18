@@ -51,7 +51,7 @@ const RingsComponent = ({ fillValue }: { fillValue: number[] })=> {
               cx="100"
               cy="100"
               r={radius - strokeWidth}
-              stroke={["#1fc2df", "#b6fc32", "#f42e6e", "#e8d7ff"][index]}
+              stroke={["#1fc2df", "#b6fc32", "#f42e6e", "#F28123"][index]}
               strokeWidth={strokeWidth}
               fill="none"
               strokeDasharray={circumference}

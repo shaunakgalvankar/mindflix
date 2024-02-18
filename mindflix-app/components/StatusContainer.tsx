@@ -4,6 +4,8 @@ import React from 'react';
 import { Text, View } from './Themed';
 import RingsComponent from './rings';
 
+const { width } = Dimensions.get('window');
+
 const StatusContainer = ({ items }: { items: { title: string[], achieved: number[], goals: number[] } }) => {
     return (
         <View style={styles.container}>
@@ -30,8 +32,10 @@ const titleColor = ['#e8d7ff','#f42e6e', '#b6fc32','#1fc2df' ];
 
 const styles = StyleSheet.create({
     container: {
-        margin:1,
-        width: Dimensions.get('window').width, // This will make the container occupy the whole width
+        padding: 20,
+        borderRadius: 20,
+        margin: 10,
+        width: width - 20,
         backgroundColor: '#121212', // Replace 'white' with your light theme color
         flexDirection: 'row', // This will arrange the children of the container side by side
         justifyContent: 'space-between', // This will put some space between the children
