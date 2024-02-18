@@ -7,6 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
+
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
  */
@@ -57,7 +58,7 @@ export default function TabLayout() {
         options={{
           title: 'Screen Time',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="people" size={24} color="#b6fc32" />
+            <AntDesign name="barschart" size={24} color="#b6fc32" />
           ),
           tabBarLabelStyle: {
             color: "#b6fc32", // Set this to the same color as your icon
