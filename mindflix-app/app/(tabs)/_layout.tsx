@@ -26,7 +26,12 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Summary',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="people" size={24} color="#b6fc32" />
+          ),
+          tabBarLabelStyle: {
+            color: "#b6fc32", // Set this to the same color as your icon
+          },
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -47,7 +52,12 @@ export default function TabLayout() {
         name="two"
         options={{
           title: 'Sharing',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="people" size={24} color="#b6fc32" />
+          ),
+          tabBarLabelStyle: {
+            color: "#b6fc32", // Set this to the same color as your icon
+          },
         }}
       />
     </Tabs>
