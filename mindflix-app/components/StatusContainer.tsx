@@ -29,7 +29,7 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
 };
 
 const titleColor = ['#F28123','#f42e6e', '#b6fc32','#1fc2df' ];
-const title = ['HRS/HRS','CAL/DAY','MIN', 'HRS' ];
+const title = ['HRS','CAL','MIN', 'HRS' ];
 
 const styles = StyleSheet.create({
     container: {
