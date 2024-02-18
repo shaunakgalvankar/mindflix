@@ -4,16 +4,16 @@ import React from 'react';
 import { Text, View } from './Themed';
 import EditScreenInfo from './EditScreenInfo';
 
-const StatusContainer = ({items}: {items: any[]}) => {
+const StatusContainer = ({items}: {items: {title:string[],achieved:number[],goals:number[]}}) => {
     return (
         <View style={styles.container}>
             <View style={styles.container}>
-            {items && items.map((item, index) => (
-                <View key={index} style={styles.item}>
-                    <Text style={styles.title}>{item.title}</Text>
-                    <Text style={styles.data}>{item.data}</Text>
+            {items && (
+                <View style={styles.item}>
+                    <Text style={styles.title}>{items.title}</Text>
+                    <Text style={styles.data}>{items.achieved} / {items.goals}</Text>
                 </View>
-            ))}
+            )}
         </View>
         </View>
     );
