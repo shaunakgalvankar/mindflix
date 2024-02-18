@@ -53,7 +53,7 @@ export default function TabLayout() {
         }}
       />
       
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="two"
         options={{
           title: 'Screen Time',
@@ -64,7 +64,7 @@ export default function TabLayout() {
             color: "#b6fc32", // Set this to the same color as your icon
           },
         }}
-      />
+      /> */}
 
     <Tabs.Screen
       name="three"

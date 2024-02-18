@@ -21,7 +21,7 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
                     </View>
                 )}
             </View>
-            <View style={{flex: 0.5, backgroundColor: 'black' }}>
+            <View style={{flex: 0.5, backgroundColor: '#121212' }}>
                 <RingsComponent fillValue={items.achieved.map((cur, idx) => (cur / items.goals[idx]) * 100)} />
             </View>
         </View>
