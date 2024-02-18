@@ -1,11 +1,10 @@
 import { StyleSheet, useColorScheme, Dimensions } from 'react-native';
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
-import RingsComponent from '../../components/rings';
+import { View } from '../../components/Themed';
 import StatusContainer from '../../components/StatusContainer';
 import StatusContainerMini from '../../components/StatusContainerMini';
 
-const items = { name: "Calvin Dani", title: ['Screen Time','Move','Excercise','Stand'], achieved: [10, 50, 70, 100], goals: [100, 100, 100, 100] };
+const items = { title: ['Screen Time','Move','Excercise','Stand'], achieved: [10, 50, 70, 60], goals: [100, 100, 100, 100] };
+const miniItems = { name: "Calvin Dani", title: ['Screen Time','Move','Excercise','Stand'], achieved: [10, 50, 70, 100], goals: [100, 100, 100, 100] };
 
 
 
@@ -14,9 +13,8 @@ export default function TabOneScreen() {
 
   return (
     <View style={styles.container}>
-      {/* <EditScreenInfo path="app/(tabs)/index.tsx" /> */}
       <StatusContainer items={items} />
-      <StatusContainerMini items={items} />
+      {/* <StatusContainerMini items={miniItems} /> */}
 
 
     </View>
@@ -29,7 +27,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#121212',
+    backgroundColor: 'black',
   },
   title: {
     fontSize: 20,

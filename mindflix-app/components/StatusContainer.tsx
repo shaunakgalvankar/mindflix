@@ -30,26 +30,24 @@ const styles = StyleSheet.create({
     container: {
         margin:1,
         width: Dimensions.get('window').width, // This will make the container occupy the whole width
-        backgroundColor: 'black', // Replace 'white' with your light theme color
+        backgroundColor: '#121212', // Replace 'white' with your light theme color
         flexDirection: 'row', // This will arrange the children of the container side by side
         justifyContent: 'space-between', // This will put some space between the children
       },
     item: {
-        margin:1,
-        marginBottom: 10,
         padding: 10,
-        backgroundColor: 'black'
+        backgroundColor: '#121212'
     },
     title: {
         fontSize: 18,
         fontWeight: 'bold',
         color: 'white',
-        backgroundColor: 'black'
+        backgroundColor: '#121212'
     },
     data: {
         fontSize: 16,
         color: 'white',
-        backgroundColor: 'black'
+        backgroundColor: '#121212'
     },
 });
 
