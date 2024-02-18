@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { View, StyleSheet, Text, Animated } from 'react-native';
+import { View, StyleSheet, Animated } from 'react-native';
 import { Svg, Circle } from 'react-native-svg';
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
@@ -8,7 +8,7 @@ const calculateCircumference = (radius: number) => {
   return 2 * Math.PI * radius;
 }
 
-const RingsComponent = () => {
+const RingsComponent = ({ fillValue }: { fillValue: number[] })=> {
   const radiusArray = [50, 60, 70, 80]; // Define your radius array
   const strokeWidth = 10; // Define your stroke width
 
@@ -24,7 +24,7 @@ const RingsComponent = () => {
     });
     Animated.stagger(500, animations).start(); // Start animations with a stagger of 500ms
   }, []);
-  const fillValues = [80, 70, 65, 70]; // Define your fill values for each ring
+  const fillValues = fillValue; // Define your fill values for each ring
 
   useEffect(() => {
     const animations = progressAnimations.map((anim, index) => {
