@@ -2,7 +2,6 @@ import { Dimensions, StyleSheet } from 'react-native';
 
 import React from 'react';
 import { Text, View } from './Themed';
-import EditScreenInfo from './EditScreenInfo';
 import RingsComponent from './rings';
 
 const StatusContainer = ({ items }: { items: { title: string[], achieved: number[], goals: number[] } }) => {
@@ -13,7 +12,7 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
                     <View style={styles.item}>
                         {items.achieved.map((cur, idx) => (
                             <View key={idx}>
-                                <Text style={styles.title}>{items.title}</Text>
+                                <Text style={[styles.title, { color : titleColor[idx]}]}>{items.title[idx]}</Text>
                                 <Text style={styles.data}>{cur} / {items.goals[idx]}</Text>
                             </View>
                         ))}
@@ -24,6 +23,8 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
         </View>
     );
 };
+
+const titleColor = ['#e8d7ff','#f42e6e', '#b6fc32','#1fc2df' ];
 
 const styles = StyleSheet.create({
     container: {

@@ -5,7 +5,7 @@ import RingsComponent from '../../components/rings';
 import StatusContainer from '../../components/StatusContainer';
 
 
-const items = { title: ['Move'], achieved: [10, 50, 70, 100], goals: [100, 100, 100, 100] };
+const items = { title: ['Screen Time','Move','Excercise','Stand'], achieved: [10, 50, 70, 100], goals: [100, 100, 100, 100] };
 
 
 
