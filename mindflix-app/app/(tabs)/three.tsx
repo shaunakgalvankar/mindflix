@@ -19,7 +19,6 @@ const miniItems8 = { name: "Shikhar Dhawan", title: ['Screen Time','Move','Excer
 export default function TabThreeScreen() {
   return (
 <ScrollView contentContainerStyle={styles.container}>
-
           <AntDesign name="pluscircle" size={24} color="#b6fc32"  style={styles.icon}/>
           <StatusContainerMini items={miniItems1} />
           <StatusContainerMini items={miniItems2} />
@@ -93,8 +92,6 @@ export default function TabThreeScreen() {
           <StatusContainerMini items={miniItems6} />
           <StatusContainerMini items={miniItems7} />
           <StatusContainerMini items={miniItems8} />
-
-
         </ScrollView>
   );
 }
