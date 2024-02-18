@@ -3,6 +3,7 @@ import { Link, Tabs } from 'expo-router';
 import { Pressable, useColorScheme } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '../../constants/Colors';
+import { AntDesign } from '@expo/vector-icons';
 
 
 /**
@@ -28,7 +29,7 @@ export default function TabLayout() {
         options={{
           title: 'Summary',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="people" size={24} color="#b6fc32" />
+            <AntDesign name="apple1" size={24} color="#b6fc32" />
           ),
           tabBarLabelStyle: {
             color: "#b6fc32", // Set this to the same color as your icon
