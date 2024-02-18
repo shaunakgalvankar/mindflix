@@ -12,7 +12,7 @@ const StatusContainer = ({ items }: { items: { title: string[], achieved: number
             {items && (
                 <View style={styles.item}>
                     
-                    {items.achieved.map((cur, idx) => <View>
+                    {items.achieved.map((cur, idx) => <View key={idx}>
                         <Text style={styles.title}>{items.title}</Text>
                         <Text style={styles.data}>{cur} / {items.goals[idx]}</Text>
                         </View>)}
